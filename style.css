@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo {
+    position: relative;
+    max-width: 100px;
+}
+
+header a {
+    position: relative;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+header a h2 {
+    color: #fff;
+    margin-left: 20px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+}
+
+header .navigation li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.content .textBox h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+.content .textBox p {
+    color: #fff;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #ffb2e1;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    position: relative;
+    max-width: 600px;
+    display: flex;
+}
+
+.content .imgBox img {
+    max-width: 150;
+}
+
+
+
+/** SLIDERR **/
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 270px;
+    height: 500px;
+}
+
+.swiper-slide img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 0px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffb2e1;
+        display: flex;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navigation li a {
+        margin: 10px 0;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
+
+    .content {
+        padding-top: 120px;
+        flex-direction: column;
+    }
+
+    .content .textBox {
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: 100%;
+    }
+
+    .content .imgBox {
+        padding-bottom: 100px;
+        max-width: 100%;
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(/icon/menu.svg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .toggle.active {
+        position: fixed;
+        right: 40px;
+        background: url(/icon/close.svg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
