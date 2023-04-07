@@ -210,9 +210,7 @@ header .navigation li a {
 }
 
 .component {
-    padding-top: 50px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding: 50px 100px;
     position: relative;
     width: 100%;
     display: flex;
@@ -242,7 +240,7 @@ header .navigation li a {
     align-items: end;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    gap: 50px;
 }
 
 .component .list .listItem {
@@ -263,9 +261,9 @@ header .navigation li a {
 
 
 .component .list .listItem img {
-    padding: 30px;
-    width: 250px;
+    width: 200px;
 }
+
 
 @media (max-width: 1100px) {
     header a h2 {
@@ -364,10 +362,24 @@ header .navigation li a {
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .component {
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .component .list .listItem img {
+        width: 300px;
+    }
 }
 
 @media (max-width: 350px) {
     header a h2 {
         display: none;
+    }
+
+    .component .list .listItem img {
+        width: 200px;
     }
 }
