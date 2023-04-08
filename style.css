@@ -498,6 +498,10 @@ header .navigation li a {
     text-align: center;
 }
 
+.checked {
+    color: rgb(255, 166, 0);
+}
+
 @media (max-width: 991px) {
     .section {
         padding: 0px;
