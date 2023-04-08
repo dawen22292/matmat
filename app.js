@@ -1,7 +1,7 @@
 AOS.init();
 
 new FinisherHeader({
-    "count": 40,
+    "count": 90,
     "size": {
         "min": 5,
         "max": 144,
