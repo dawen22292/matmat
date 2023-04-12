@@ -415,10 +415,10 @@ header .navigation li a {
     padding-top: 100px;
     padding-bottom: 50px;
     position: relative;
+    height: 1000px;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -503,6 +503,14 @@ header .navigation li a {
 }
 
 @media (max-width: 991px) {
+    .about {
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        height: 100%;
+       
+    }
+
     .section {
         padding: 0px;
     }
