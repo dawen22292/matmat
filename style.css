@@ -487,6 +487,7 @@ header .navigation li a {
 }
 
 .footer {
+    background-color: rgb(255, 255, 255);
     height: 160px;
     width: 100%;
     padding-top: 70px;
@@ -494,7 +495,6 @@ header .navigation li a {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    color: #fff;
 }
 
 .checked {
