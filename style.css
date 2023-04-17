@@ -444,6 +444,32 @@ header .navigation li a {
     font-weight: 600;
 }
 
+.others {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Caveat-SemiBold', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.others div {
+    max-width: 300px;
+}
+
+.others img {
+    max-width: 300px;
+}
+
+.others h1 {
+    font-family: 'Caveat-SemiBold', sans-serif;
+}
+
 
 @media (max-width: 1120px) {
     header a h2 {
@@ -618,6 +644,14 @@ header .navigation li a {
 
     .imgFloral-reverse {
         max-width: 490px;
+    }
+
+    .others img {
+        max-width: 90vw;
+    }
+
+    .others div {
+        max-width: 90vw;
     }
 }
 
