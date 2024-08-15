@@ -58,6 +58,40 @@ header .logo {
     max-width: 100px;
 }
 
+#sponsors .list {
+    margin-top: 70px;
+    padding: 50px;
+    height: auto;
+    column-count: 3;
+    column-gap: 20px; /* Optional: Adjusts the space between columns */
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#sponsors ul {
+    color: #D4AF37;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0),
+        /* Subtle shadow for depth */
+        0 0 5px #000000,
+        /* Outer glow effect */
+        0 0 10px #000000,
+        /* Outer glow effect */
+        0 0 15px #000000;
+    /* Stronger outer glow */
+    list-style-type: none;
+    /* Removes bullet points */
+    padding-left: 0;
+    /* Removes default padding */
+}
+
+li {
+    break-inside: avoid;
+    /* Prevents items from breaking between columns */
+    margin-bottom: 5px;
+    /* Optional: Adds space between list items */
+}
+
 header a {
     color: #D4AF37;
     text-shadow: 1px 1px 1px rgb(0, 0, 0),
@@ -831,6 +865,12 @@ iframe {
 }
 
 @media (max-width: 600px) {
+
+    #sponsors .list {
+        column-count: 2;
+        padding: 20px;
+    }
+
     header a {
         font-size: .6em;
         padding: 0px;
@@ -931,6 +971,9 @@ iframe {
 }
 
 @media (max-width: 350px) {
+    #sponsors .list {
+        column-count: 1;
+    }
     header a h2 {
         display: none;
     }
