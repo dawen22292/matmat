@@ -3,93 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Yhana's</title>
+    <title>Matmat</title>
 
     <meta name="google-site-verification" content="VY67vJcl-ao2dXZE4LT5rT1qkPrLqt-x-CuR6-RRxqE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="finisher-header">
+<body class="background">
     <div>
         <div class="section" id="home">
             <header>
                 <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="200">
-                    <img src="images/logo.png" class="logo">
-                    <h2>Yhana's Cake & Pastries</h2>
+                    <h2>Matmat The Explorer</h2>
                 </a>
                 <div class="toggle" onclick="toggleMenu()"></div>
                 <ul class="navigation">
                     <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="250"><a class="nav"
                             href="#home" onclick="toggleMenu()">Home</a></li>
                     <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300"><a class="nav"
-                            href="#menu" onclick="toggleMenu()">Menu</a></li>
+                            href="#event" onclick="toggleMenu()">Event Details</a></li>
                     <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="350"><a class="nav"
-                            href="#customized" onclick="toggleMenu()">Customized</a></li>
+                            href="#gallery" onclick="toggleMenu()">Photo Gallery</a></li>
                     <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400"><a class="nav"
-                            href="#reminders" onclick="toggleMenu()">Reminders</a></li>
-                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="450"><a class="nav"
-                            href="#about" onclick="toggleMenu()">About</a></li>
+                            href="#schedule" onclick="toggleMenu()">Schedule</a></li>
                 </ul>
             </header>
             <div class="content">
                 <div class="textBox">
-                    <h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">Ang cake na hindi
-                        nakakaumay
+                    <h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+                        Darrien Matthew’s 1st Birthday!
                     </h2>
-                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">Craving for a taste of
-                        heaven? Look no further! Our luscious cakes are baked fresh daily with love and adorned with
-                        artistic designs that are sure to delight your taste buds and captivate your senses.</p>
+                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">We're thrilled to invite
+                        you on a wild journey as we celebrate our little explorer, Darrien Matthew, turning one!</p>
                     <a data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000" href="#customized">View
                         more</a>
                 </div>
                 <div class="imgBox" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/2022052238213.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1642913209226.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1643698693636.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1646299883771.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1648721386311.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1651280294231.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1651911819612.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1653651644288.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/caramel.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/ube.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/2022052348213.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/2022052808213.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/1646567339259.png" />
-                            </div>
-                        </div>
+                    <div class="countdown">
+                        <p id="timer">Loading...</p>
                     </div>
                 </div>
             </div>
@@ -108,126 +63,28 @@
                 </svg>
             </div>
         </div>
-        <div class="component" id="menu">
+        <div class="component" id="event">
             <div class="title">
-                <h1>Menu</h1>
-                <p>Experience pure bliss with our luscious cakes, baked fresh daily with love, and adorned with artistic
-                    designs.</p>
+                <h1>Event Details</h1>
+                <p>Below, you’ll find all the details you need to know for the celebration. We hope you can join us for
+                    a day of excitement and joy!</p>
             </div>
-            <div class="list">
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/2022052348213.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Mango Cake (7x4)</h3>
-                    <p>₱ 900-1,000.00</p>
-                </div>
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/1643698693636.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Vanilla Chiffon Cake (7x4)</h3>
-                    <p>₱ 850.00</p>
-                </div>
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/1646567339259.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Choco Chiffon Cake (7x4)</h3>
-                    <p>₱ 900.00</p>
-                </div>
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/1653651644288.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Mocha Chiffon Cake (7x4)</h3>
-                    <p>₱ 850.00</p>
-                </div>
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/2022052238213.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Chocomoist Cake (7x4)</h3>
-                    <p>₱ 1,500.00</p>
-                </div>
+            <div class="event-details">
+                <h3>Date and Time</h3>
+                <p><strong>Date:</strong> September 1, 2024 Sunday</p>
+                <p><strong>Time:</strong> 12:30 PM - 2:30 PM</p>
 
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cupcakes.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Chocomoist Cupcakes (12pcs)</h3>
-                    <p>₱ 500.00</p>
-                </div>
-
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/bentowithcupcakes.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Bento Cake with Cupcakes (8pcs)</h3>
-                    <p>₱ 600.00</p>
-                </div>
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/caramel.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Creamy Caramel Cake (7x4)</h3>
-                    <p>₱ 1,000.00</p>
-                </div>
-                <div class="listItem" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/ube.png" />
-                    <div>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <h3>Ube Chiffon Cake (7x4)</h3>
-                    <p>₱ 850.00</p>
-                </div>
+                <h3>Location</h3>
+                <p><strong>Venue:</strong> McDonald's Bay</p>
+                <p><strong>Address:</strong> Manila South Road, National Highway, Brgy. Dila, Bay Laguna 4033 Bay,
+                    Philippines</p>
             </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.0677510118146!2d121.28763716526049!3d14.178899028830234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd61b040d099d3%3A0xea577f09683a1f4e!2sMcDonald&#39;s%20Bay%20Laguna!5e0!3m2!1sen!2sph!4v1723620922723!5m2!1sen!2sph"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="custom" id="customized">
+        <div class="custom" id="gallery" style="padding-bottom: 200px;">
             <div class="custom-shape-divider-top-1680828191">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -243,253 +100,48 @@
                 </svg>
             </div>
             <div class="title1">
-                <h1>Customized Cake</h1>
-                <p>Whether it's a birthday, anniversary, baby shower, or any other celebration, our customized cakes are
-                    sure to be the highlight of your event. Each cake is made with love and attention to detail,
-                    ensuring that it not only looks stunning but also tastes exquisite.</p>
+                <h1>Photo Gallery</h1>
+                <p>We're excited to share the special moments of Darrien Matthew’s 1st Birthday celebration with you! 
+                    Explore our gallery and relive the fun, joy, and adventure that made this day unforgettable. 
+                    Each photo captures the love and excitement of our little one’s milestone, and we’re thrilled to have you 
+                    as part of this journey. Enjoy the memories!</p>
             </div>
-            <div class="floral">
-                <div class="textFloral">
-                    <h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">Floral Cake
-                    </h2>
-                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">Whether you're
-                        celebrating a special occasion, surprising a loved one, or simply treating yourself, our floral
-                        cakes are sure to impress. With their unique and exquisite design, they make a perfect
-                        centerpiece for any event or a stunning gift that will leave a lasting impression.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6414.jpg" alt="Image 1">
                 </div>
-                <div class="imgFloral" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/floral/1.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/2.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/3.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/4.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/5.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/6.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/7.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/8.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/floral/9.png" />
-                            </div>
-                        </div>
-                    </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6417.jpg" alt="Image 3">
                 </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6420.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6415.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6422.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6414.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6417.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6420.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6415.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/matmat/gallery/260A6422.jpg" alt="Image 3">
+                </div>
+                <!-- Add more images as needed -->
             </div>
-            <div class="floral-reverse">
-                <div class="textFloral-reverse">
-                    <h2 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">Themed Cake
-                    </h2>
-                    <p data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">Make your special occasion
-                        truly unforgettable with our extraordinary themed cakes. Order now and let us create a cake that
-                        will transport you to a world of imagination and wonder!</p>
-                </div>
-                <div class="imgFloral-reverse" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/themed/1.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/2.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/3.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/4.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/5.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/6.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/7.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/8.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/9.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/10.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/11.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/12.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/13.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/14.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/themed/15.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="floral">
-                <div class="textFloral">
-                    <h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">Number Cake
-                    </h2>
-                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">Whether you're
-                        celebrating a birthday, anniversary, or any other significant occasion, our number cakes are
-                        custom-made to represent the age or milestone you're celebrating. Choose from a wide range of
-                        flavors, fillings, and designs to create a cake that is truly unique and meaningful.</p>
-                </div>
-                <div class="imgFloral" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/number/1.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/2.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/3.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/4.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/5.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/6.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/7.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/8.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/9.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/number/10.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="floral-reverse">
-                <div class="textFloral-reverse">
-                    <h2 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">Ball Cake
-                    </h2>
-                    <p data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">Experience the enchantment
-                        of our mesmerizing ball cakes! Delight your taste buds with the irresistible flavors and
-                        exquisite designs of our premium ball cakes. Perfect for any celebration, our ball cakes are a
-                        blend of artistry and delectable taste. Made with love and attention to detail, our ball cakes
-                        are sure to captivate your senses and leave a lasting impression on your guests. Indulge in the
-                        magic of our ball cakes and elevate your special occasion to new heights.</p>
-                </div>
-                <div class="imgFloral-reverse" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/ball/1.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/ball/2.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/ball/3.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/ball/1.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/ball/2.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/ball/3.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="floral">
-                <div class="textFloral">
-                    <h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">Butterfly Cake
-                    </h2>
-                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">Cakes should not only
-                        taste delicious but also inspire wonder and awe. Our butterfly cakes are a true masterpiece,
-                        combining exquisite taste with stunning design to create a whimsical and enchanting dessert that
-                        will captivate your senses.</p>
-                </div>
-                <div class="imgFloral" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/1.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/2.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/3.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/4.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/1.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/2.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/3.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/butterfly/4.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="others">
-                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/1661677218192.png" />
-                    <h1>Money Cake</h1>
-                    <p>Our delicious money cake is not only a feast for the taste buds, but also a symbol of prosperity and abundance.</p>
-                </div>
-                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/1652533618801.png" />
-                    <h1>Chocolate Cake</h1>
-                    <p>Indulge in the ultimate chocolate lover's dream with our decadent chocolate cake.</p>
-                </div>
-
-                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/1680933945130-copy.png" />
-                    <h1>Gender Reveal</h1>
-                    <p>It's time to share the exciting news with family and friends! Our gender reveal cake is the perfect way to announce the gender of your precious bundle of joy.</p>
-                </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
             </div>
             <div class="custom-shape-divider-bottom-1680759513">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -506,93 +158,6 @@
                 </svg>
             </div>
         </div>
-        <div class="component" id="reminders" style="padding-bottom: 200px;">
-            <div class="title">
-                <h1>Reminders</h1>
-                <p>Caring for Your Cake - Tips for Serving and Storing Delicious Delights!</p>
-            </div>
-            <div class="reminders">
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/cakehand.png" />
-                    <h3>Pickup and carry the cake box from the bottom only.</h3>
-                </div>
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/cake.png" />
-                    <h3>Keep the cake level at all times including transport and refrigeration.</h3>
-                </div>
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/car.png" />
-                    <h3>Transport the cake in an air-conditioned vehicle away from loose objects.</h3>
-                </div>
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/ref.png" />
-                    <h3>Store cake in the box in a refrigerator.</h3>
-                </div>
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/sun.png" />
-                    <h3>Keep away form direct sunlight, moisture and heat when not in fridge.</h3>
-                </div>
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/time.png" />
-                    <h3>Take the cake out of the fridge 1 hour before serving and serve at room temperature.</h3>
-                </div>
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/stand.png" />
-                    <h3>Use a sturdy cake stand at least an inch larger than the cake board.</h3>
-                </div>
-                <div class="reminders-item" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="250">
-                    <img src="images/cake icon/container.png" />
-                    <h3>Store the leftover cake in the fridge in an airtight container.</h3>
-                </div>
-            </div>
-        </div>
-        <div class="component" id="about" style="margin-top: -10px; margin-bottom: -10px;">
-            <div class="title">
-                <h1>About Us</h1>
-                <p>Make every moment in life sweeter and more memorable with our cakes. Whether it's a birthday,
-                    wedding, anniversary, or any other celebration, we believe that a beautifully crafted cake has the
-                    power to bring joy, happiness, and create lasting memories.</p>
-            </div>
-            <div class="floral-reverse" style="padding-top: 50px; padding-bottom: 50px;">
-                <div>
-                    <div class="detail" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="300">
-                        <img src="./icon/map-marker-outline.svg" alt="" style="width: 30px;">
-                        <div>
-                            <p>
-                                Address
-                            </p>
-                            <span>47 L. Geirosa Ave, Silangan, Calauan, Laguna 4012</span>
-                        </div>
-                    </div>
-                    <div class="detail" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                        <img src="./icon/phone.svg" alt="" style="width: 30px;">
-                        <div>
-                            <p>
-                                Mobile
-
-                            </p>
-                            <span>0955 140 0402 / 0906 232 7969</span>
-                        </div>
-                    </div>
-                    <div class="detail" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
-                        <img src="./icon/facebook.svg" alt="" style="width: 30px;">
-                        <div>
-                            <p>
-                                Facebook
-                            </p>
-                            <span>/YhanasCakesandPastries</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="imgFloral-reverse" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="250">
-                    <iframe data-aos="fade-right" data-aos-ease="ease" data-aos-duration="2000"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d175078.84015535307!2d121.29999678177818!3d14.151826923911662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5d7e7b3a6b9d%3A0xd5132f3cc30ba642!2sYhana&#39;s%20Cakes%20and%20Pastries!5e0!3m2!1sen!2sph!4v1680932870278!5m2!1sen!2sph"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!-- Messenger Chat Plugin Code -->
@@ -602,8 +167,6 @@
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
 
-    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
     <script>
@@ -630,9 +193,47 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
+    <script>
+        function countdown() {
+            const targetDate = new Date('September 1, 2024 12:30:00').getTime();
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (timeLeft < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "The event has started!";
+            }
+        }
+
+        const x = setInterval(countdown, 1000);
+    </script>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        document.querySelectorAll('.gallery-item img').forEach(image => {
+            image.addEventListener('click', () => {
+                lightbox.style.display = 'block';
+                lightboxImg.src = image.src;
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+    </script>
+
     <div class="footer">
-        &copy;
-        <script> document.write(new Date().getFullYear()) </script> YhanasCakesandPastries. All Rights Reserved.
+        <p>Contact us: 0955 140 0402 / 0906 232 7969</p>
     </div>
 </body>
 

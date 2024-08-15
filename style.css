@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 @font-face {
-    font-family: 'PlaylistScript';
+    font-family: 'JungleAdventurer';
     font-display: block;
     unicode-range: U+000-5FF;
-    src: url('./fonts/PlaylistScript.ttf') format('truetype');
+    src: url('./fonts/JungleAdventurer.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Caveat-SemiBold';
+    font-family: 'JungleFeverNF';
     font-display: block;
     unicode-range: U+000-5FF;
-    src: url('./fonts/Caveat-SemiBold.ttf') format('truetype');
+    src: url('./fonts/JungleFeverNF.ttf') format('truetype');
 }
 
 * {
@@ -21,12 +21,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body.background {
+    background-image: url('images/matmat/260A6460.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 .section {
     position: relative;
     width: 100%;
-    min-height: 700px;
+    min-height: 120vh;
     padding: 100px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -49,6 +59,15 @@ header .logo {
 }
 
 header a {
+    color: #D4AF37;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0),
+        /* Subtle shadow for depth */
+        0 0 5px #000000,
+        /* Outer glow effect */
+        0 0 10px #000000,
+        /* Outer glow effect */
+        0 0 15px #000000;
+    /* Stronger outer glow */
     position: relative;
     align-items: center;
     display: flex;
@@ -60,7 +79,7 @@ header a {
 .nav:after {
     content: "";
     position: absolute;
-    background-color: #ffb2e1;
+    background-color: #ffffff;
     height: 3px;
     width: 0;
     left: 0;
@@ -70,7 +89,7 @@ header a {
 }
 
 .nav:hover {
-    color: #ffb2e1;
+    color: #ffffff;
 }
 
 .nav:hover:after {
@@ -79,9 +98,8 @@ header a {
 }
 
 header a h2 {
-    color: #fff;
     margin-left: 10px;
-    font-family: 'PlaylistScript', sans-serif;
+    font-family: 'JungleFeverNF', sans-serif;
     font-size: 2em;
     font-weight: 100;
 }
@@ -97,7 +115,7 @@ header .navigation li {
 
 header .navigation li a {
     display: inline-block;
-    color: #fff;
+    color: #D4AF37;
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
@@ -108,33 +126,55 @@ header .navigation li a {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .content .textBox {
     position: relative;
     min-width: 500px;
     margin-right: 20px;
+    margin-top: 30px;
 }
 
 .content .textBox h2 {
-    color: #fff;
-    font-size: 3em;
+    color: #D4AF37;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0),
+        /* Subtle shadow for depth */
+        0 0 5px #000000,
+        /* Outer glow effect */
+        0 0 10px #000000,
+        /* Outer glow effect */
+        0 0 15px #000000;
+    font-size: 4.5em;
     margin-bottom: 10px;
     line-height: 1.4em;
     font-weight: 600;
-    font-family: 'Caveat-SemiBold', sans-serif;
+    font-family: 'JungleAdventurer', sans-serif;
 }
 
 .content .textBox p {
-    color: #fff;
+    color: #ffc300;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0),
+        /* Subtle shadow for depth */
+        0 0 5px #000000,
+        /* Outer glow effect */
+        0 0 10px #000000,
+        /* Outer glow effect */
+        0 0 15px #000000;
+    /* Stronger outer glow */
+    /* Gold color */
+    /* Black background with 50% opacity */
+    padding: 10px;
+    /* Optional: Add padding for better readability */
+    border-radius: 5px;
+    /* Optional: Add rounded corners */
+    width: 400px;
 }
 
 .content .textBox a {
     display: inline-block;
     margin-top: 20px;
-    background: #ffb2e1;
-    color: #fff;
+    background: #D4AF37;
+    color: #000000;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -146,22 +186,112 @@ header .navigation li a {
 }
 
 .content .textBox a:hover {
-    border: 2px solid #ffb2e1;
+    border: 2px solid #000000;
     background: transparent;
     padding: 8px 20px;
-    color: #ffb2e1;
+    color: #000000;
 }
 
 .content .imgBox {
-    position: relative;
     min-width: 550px;
-    display: flex;
+    text-align: right;
 }
 
-.content .imgBox img {
-    max-width: 150;
+.countdown {
+    color: #D4AF37;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0),
+        /* Subtle shadow for depth */
+        0 0 5px #000000,
+        /* Outer glow effect */
+        0 0 10px #000000,
+        /* Outer glow effect */
+        0 0 15px #000000;
+    font-size: 3em;
 }
 
+.gallery {
+    margin-top: 70px;
+    column-count: 5;
+    /* Number of columns */
+    column-gap: 0;
+    /* Remove space between columns */
+}
+
+.gallery-item {
+    break-inside: avoid;
+    /* Prevents items from breaking between columns */
+    width: 100%;
+    /* Ensure the images take full width */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+    border: 5px solid white;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.event-details {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.event-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.event-details h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.event-details p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+iframe {
+    margin-top: 50px;
+}
 
 
 /** SLIDERR **/
@@ -295,11 +425,19 @@ header .navigation li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 
 .title1 {
+    color: #D4AF37;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0),
+        /* Subtle shadow for depth */
+        0 0 5px #000000,
+        /* Outer glow effect */
+        0 0 10px #000000,
+        /* Outer glow effect */
+        0 0 15px #000000;
+    /* Stronger outer glow */
     position: relative;
     display: flex;
     width: 100%;
@@ -307,7 +445,6 @@ header .navigation li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
     padding-top: 20px;
 }
 
@@ -533,7 +670,7 @@ header .navigation li a {
         padding-right: 20px;
         position: relative;
         height: 100%;
-       
+
     }
 
     .section {
@@ -554,7 +691,7 @@ header .navigation li a {
         left: 0;
         width: 100%;
         height: 100%;
-        background: #ffb2e1;
+        background-color: rgba(0, 0, 0, 0.8);
         display: flex;
         z-index: 10;
         flex-direction: column;
@@ -569,7 +706,6 @@ header .navigation li a {
     }
 
     .content {
-        padding-top: 120px;
         flex-direction: column;
     }
 
@@ -606,6 +742,7 @@ header .navigation li a {
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
+        color: #D4AF37;
     }
 
     .component {
@@ -630,6 +767,69 @@ header .navigation li a {
 }
 
 @media (max-width: 600px) {
+    header a {
+        font-size: .6em;
+    }
+
+    .content .textBox h2 {
+        color: #D4AF37;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+        font-weight: 600;
+        font-family: 'JungleAdventurer', sans-serif;
+        margin-top: 30px;
+    }
+
+    .content .textBox p {
+        color: #ffc300;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0),
+            /* Subtle shadow for depth */
+            0 0 5px #000000,
+            /* Outer glow effect */
+            0 0 10px #000000,
+            /* Outer glow effect */
+            0 0 15px #000000;
+        /* Stronger outer glow */
+        /* Gold color */
+        /* Black background with 50% opacity */
+        padding: 10px;
+        /* Optional: Add padding for better readability */
+        border-radius: 5px;
+        /* Optional: Add rounded corners */
+        width: 90%;
+    }
+
+    .content .imgBox {
+        margin-top: 60px;
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .countdown {
+        color: #D4AF37;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0),
+            /* Subtle shadow for depth */
+            0 0 5px #000000,
+            /* Outer glow effect */
+            0 0 10px #000000,
+            /* Outer glow effect */
+            0 0 15px #000000;
+        font-size: 2em;
+    }
+
+    .gallery {
+        margin-top: 50px;
+        column-count: 3;
+        /* Number of columns */
+        column-gap: 0;
+        /* Remove space between columns */
+    }
+
+
+
     .textFloral {
         max-width: 450px;
     }
