@@ -98,7 +98,6 @@ header a {
 }
 
 header a h2 {
-    margin-left: 10px;
     font-family: 'JungleFeverNF', sans-serif;
     font-size: 2em;
     font-weight: 100;
@@ -126,6 +125,7 @@ header .navigation li a {
     width: 100%;
     display: flex;
     justify-content: center;
+    border: 1px solid red;
 }
 
 .content .textBox {
@@ -163,8 +163,6 @@ header .navigation li a {
     /* Stronger outer glow */
     /* Gold color */
     /* Black background with 50% opacity */
-    padding: 10px;
-    /* Optional: Add padding for better readability */
     border-radius: 5px;
     /* Optional: Add rounded corners */
     width: 400px;
@@ -665,6 +663,58 @@ iframe {
 }
 
 @media (max-width: 991px) {
+    header a {
+        font-size: .6em;
+        padding: 0px;
+    }
+    .content .textBox h2 {
+        color: #D4AF37;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+        font-weight: 600;
+        font-family: 'JungleAdventurer', sans-serif;
+        margin-top: 30px;
+    }
+
+    .content .textBox p {
+        color: #ffc300;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0),
+            /* Subtle shadow for depth */
+            0 0 5px #000000,
+            /* Outer glow effect */
+            0 0 10px #000000,
+            /* Outer glow effect */
+            0 0 15px #000000;
+        /* Stronger outer glow */
+        /* Gold color */
+        /* Black background with 50% opacity */
+        /* Optional: Add padding for better readability */
+        border-radius: 5px;
+        /* Optional: Add rounded corners */
+        width: 90%;
+    }
+
+    .content .imgBox {
+        width: 100%;
+        padding-top: 46vh;
+        text-align: center;
+        height: 46vh;
+    }
+
+    .countdown {
+        color: #D4AF37;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0),
+            /* Subtle shadow for depth */
+            0 0 5px #000000,
+            /* Outer glow effect */
+            0 0 10px #000000,
+            /* Outer glow effect */
+            0 0 15px #000000;
+        font-size: 2em;
+    }
+
     .about {
         padding-left: 20px;
         padding-right: 20px;
@@ -769,8 +819,8 @@ iframe {
 @media (max-width: 600px) {
     header a {
         font-size: .6em;
+        padding: 0px;
     }
-
     .content .textBox h2 {
         color: #D4AF37;
         text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000;
@@ -794,7 +844,6 @@ iframe {
         /* Stronger outer glow */
         /* Gold color */
         /* Black background with 50% opacity */
-        padding: 10px;
         /* Optional: Add padding for better readability */
         border-radius: 5px;
         /* Optional: Add rounded corners */
@@ -802,10 +851,10 @@ iframe {
     }
 
     .content .imgBox {
-        margin-top: 60px;
-        text-align: center;
         width: 100%;
-        margin-top: 100px;
+        padding-top: 35vh;
+        text-align: center;
+        height: 30vh;
     }
 
     .countdown {
@@ -893,5 +942,4 @@ iframe {
     .imgFloral-reverse {
         max-width: 240px;
     }
-
 }
