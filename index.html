@@ -43,7 +43,8 @@
                     </h2>
                     <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">We're thrilled to invite
                         you on a wild journey as we celebrate our little explorer, Darrien Matthew, turning one!</p>
-                    <div class="hide-pc countdown">
+                    <div class="hide-pc countdown" data-aos="fade-right" data-aos-easing="linear"
+                        data-aos-duration="1500">
                         <span id="timer2">Loading...</span>
                     </div>
                     <a data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000" href="#dedication">View
@@ -115,72 +116,94 @@
             </div>
             <div class="gallery">
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6336.jpg" alt="Image 1">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6415.jpg" alt="Image 1">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6340t.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6436.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6376.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6399t.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6466.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6379.jpg" alt="Image 1">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6361t.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6463.jpg" alt="Image 2">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6407.jpg" alt="Image 2">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6363t.jpg" alt="Image 2">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6409.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6417.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6422t.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6430.jpg" alt="Image 2">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6460.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6405t.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6466.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6452.jpg" alt="Image 1">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6453t.jpg" alt="Image 3">
                 </div>
                 <div class="gallery-item">
+                    <div class="loader"></div>
                     <img src="./images/matmat/gallery/260A6308.jpg" alt="Image 3">
                 </div>
-                
+
             </div>
             <div id="lightbox" class="lightbox">
                 <span class="close" onclick="closeLightbox()">&times;</span>
@@ -407,6 +430,25 @@
     </script>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".gallery-item img");
+
+            images.forEach((img) => {
+                // Listen for when each image is fully loaded
+                img.addEventListener("load", function () {
+                    // Hide the loader
+                    img.previousElementSibling.style.display = "none";
+                    // Show the image
+                    img.classList.add("loaded");
+                });
+
+                // For cached images
+                if (img.complete) {
+                    img.dispatchEvent(new Event("load"));
+                }
+            });
+        });
+
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
 
