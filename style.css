@@ -72,8 +72,6 @@ header a {
     align-items: center;
     display: flex;
     text-decoration: none;
-    padding: 0 10px;
-
 }
 
 .nav:after {
@@ -125,7 +123,6 @@ header .navigation li a {
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .content .textBox {
@@ -662,7 +659,23 @@ iframe {
     color: rgb(255, 166, 0);
 }
 
+.hide-mobile {
+    display: block;
+}
+
+.hide-pc {
+    display: none;
+}
+
 @media (max-width: 991px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .hide-pc {
+        display: block;
+    }
+
     header a {
         font-size: .6em;
         padding: 0px;
@@ -850,13 +863,6 @@ iframe {
         border-radius: 5px;
         /* Optional: Add rounded corners */
         width: 90%;
-    }
-
-    .content .imgBox {
-        width: 100%;
-        padding-top: 35vh;
-        text-align: center;
-        height: 30vh;
     }
 
     .countdown {

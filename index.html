@@ -39,11 +39,14 @@
                     </h2>
                     <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">We're thrilled to invite
                         you on a wild journey as we celebrate our little explorer, Darrien Matthew, turning one!</p>
+                    <div class="hide-pc countdown">
+                        <span id="timer2">Loading...</span>
+                    </div>
                     <a data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000" href="#event">View
                         more</a>
                 </div>
                 <div class="imgBox" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
-                    <div class="countdown">
+                    <div class="hide-mobile countdown">
                         <span id="timer">Loading...</span>
                     </div>
                 </div>
@@ -101,9 +104,10 @@
             </div>
             <div class="title1">
                 <h1>Photo Gallery</h1>
-                <p>We're excited to share the special moments of Darrien Matthew’s 1st Birthday celebration with you! 
-                    Explore our gallery and relive the fun, joy, and adventure that made this day unforgettable. 
-                    Each photo captures the love and excitement of our little one’s milestone, and we’re thrilled to have you 
+                <p>We're excited to share the special moments of Darrien Matthew’s 1st Birthday celebration with you!
+                    Explore our gallery and relive the fun, joy, and adventure that made this day unforgettable.
+                    Each photo captures the love and excitement of our little one’s milestone, and we’re thrilled to
+                    have you
                     as part of this journey. Enjoy the memories!</p>
             </div>
             <div class="gallery">
@@ -210,6 +214,14 @@
             if (timeLeft < 0) {
                 clearInterval(x);
                 document.getElementById("timer").innerHTML = "The event has started!";
+            }
+
+            document.getElementById("timer2").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (timeLeft < 0) {
+                clearInterval(x);
+                document.getElementById("timer2").innerHTML = "The event has started!";
             }
         }
 
