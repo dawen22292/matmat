@@ -70,7 +70,7 @@ header .logo {
 }
 
 #sponsors ul {
-    color: #D4AF37;
+    color: #ffc300;
     text-shadow: 1px 1px 1px rgb(0, 0, 0),
         /* Subtle shadow for depth */
         0 0 5px #000000,
@@ -93,7 +93,7 @@ li {
 }
 
 header a {
-    color: #D4AF37;
+    color: #ffc300; 
     text-shadow: 1px 1px 1px rgb(0, 0, 0),
         /* Subtle shadow for depth */
         0 0 5px #000000,
@@ -146,7 +146,7 @@ header .navigation li {
 
 header .navigation li a {
     display: inline-block;
-    color: #D4AF37;
+    color: #ffc300;
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
@@ -167,7 +167,7 @@ header .navigation li a {
 }
 
 .content .textBox h2 {
-    color: #D4AF37;
+    color: #ffc300;
     text-shadow: 1px 1px 1px rgb(0, 0, 0),
         /* Subtle shadow for depth */
         0 0 5px #000000,
@@ -202,7 +202,7 @@ header .navigation li a {
 .content .textBox a {
     display: inline-block;
     margin-top: 20px;
-    background: #D4AF37;
+    background: #ffc300;
     color: #000000;
     border-radius: 40px;
     font-weight: 500;
@@ -227,7 +227,7 @@ header .navigation li a {
 }
 
 .countdown {
-    color: #D4AF37;
+    color: #ffc300;
     text-shadow: 1px 1px 1px rgb(0, 0, 0),
         /* Subtle shadow for depth */
         0 0 5px #000000,
@@ -492,7 +492,7 @@ iframe {
 
 
 .title1 {
-    color: #D4AF37;
+    color: #ffc300;
     text-shadow: 1px 1px 1px rgb(0, 0, 0),
         /* Subtle shadow for depth */
         0 0 5px #000000,
@@ -750,7 +750,7 @@ iframe {
     }
 
     .content .textBox h2 {
-        color: #D4AF37;
+        color: #ffc300;
         text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000;
         font-size: 2.5em;
         margin-bottom: 10px;
@@ -786,7 +786,7 @@ iframe {
     }
 
     .countdown {
-        color: #D4AF37;
+        color: #ffc300;
         text-shadow: 1px 1px 1px rgb(0, 0, 0),
             /* Subtle shadow for depth */
             0 0 5px #000000,
@@ -874,7 +874,7 @@ iframe {
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
-        color: #D4AF37;
+        color: #ffc300;
     }
 
     .component {
@@ -911,7 +911,7 @@ iframe {
     }
 
     .content .textBox h2 {
-        color: #D4AF37;
+        color: #ffc300;
         text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000;
         font-size: 2.5em;
         margin-bottom: 10px;
@@ -940,7 +940,7 @@ iframe {
     }
 
     .countdown {
-        color: #D4AF37;
+        color: #ffc300;
         text-shadow: 1px 1px 1px rgb(0, 0, 0),
             /* Subtle shadow for depth */
             0 0 5px #000000,
