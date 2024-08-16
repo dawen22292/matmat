@@ -295,7 +295,9 @@ header .navigation li a {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg) translate(-50%, -50%);
+    }
 }
 
 .lightbox {
