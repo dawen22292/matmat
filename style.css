@@ -244,6 +244,9 @@ header .navigation li a {
     /* Number of columns */
     column-gap: 0;
     /* Remove space between columns */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .gallery-item {
@@ -254,6 +257,7 @@ header .navigation li a {
     position: relative;
     /* Positioning for the loader */
     overflow: hidden;
+    padding: 10px;
 }
 
 .gallery-item img {
@@ -264,7 +268,6 @@ header .navigation li a {
     /* Initially hidden until loaded */
     transition: transform 0.3s ease, opacity 0.3s ease;
     /* Smooth hover effect and fade-in */
-    border: 5px solid white;
     opacity: 0;
 }
 
