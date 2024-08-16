@@ -262,7 +262,7 @@ header .navigation li a {
 
 .gallery-item img {
     width: 100%;
-    min-height: 100px;
+    height: auto;
     /* Maintain aspect ratio */
     display: none;
     /* Initially hidden until loaded */
@@ -285,8 +285,8 @@ header .navigation li a {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border: 5px solid rgba(0, 0, 0, 0.1);
     border-top: 5px solid #000;
     border-radius: 50%;
@@ -984,6 +984,10 @@ iframe {
 }
 
 @media (max-width: 450px) {
+    #sponsors .list {
+        padding: 10px;
+    }
+
     .textFloral {
         max-width: 300px;
     }
