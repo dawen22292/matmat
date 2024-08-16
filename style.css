@@ -262,7 +262,7 @@ header .navigation li a {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    min-height: 100px;
     /* Maintain aspect ratio */
     display: none;
     /* Initially hidden until loaded */
@@ -274,6 +274,7 @@ header .navigation li a {
 .gallery-item img.loaded {
     display: block;
     opacity: 1;
+    
 }
 
 .gallery-item img:hover {
