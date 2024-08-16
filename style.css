@@ -957,9 +957,14 @@ iframe {
         /* Number of columns */
         column-gap: 0;
         /* Remove space between columns */
+        padding: 10px;
     }
 
-
+    .gallery-item {
+       
+        padding: 5px;
+       
+    }
 
     .textFloral {
         max-width: 450px;
