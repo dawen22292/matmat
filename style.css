@@ -258,6 +258,10 @@ header .navigation li a {
     /* Positioning for the loader */
     overflow: hidden;
     padding: 10px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item img {
@@ -283,20 +287,17 @@ header .navigation li a {
 
 .loader {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: 20px;
     height: 20px;
     border: 5px solid rgba(0, 0, 0, 0.1);
     border-top: 5px solid #000;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    transform: translate(-50%, -50%);
 }
 
 @keyframes spin {
     to {
-        transform: rotate(360deg) translate(-50%, -50%);
+        transform: rotate(360deg);
     }
 }
 
