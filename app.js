@@ -1,4 +1,7 @@
-AOS.init();
+AOS.init({
+    duration: 1000, // Animation duration
+    offset: 100,    // Offset from the element
+});
 
 function toggleMenu() {
     const menuToggle = document.querySelector('.toggle');
