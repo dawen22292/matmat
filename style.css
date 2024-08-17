@@ -759,6 +759,10 @@ iframe {
         margin-top: 30px;
     }
 
+    .content .textBox {
+        width: 90%;
+    }
+
     .content .textBox p {
         color: #ffc300;
         text-shadow: 1px 1px 1px rgb(0, 0, 0),
