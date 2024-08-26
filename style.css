@@ -735,6 +735,11 @@ iframe {
 }
 
 @media (max-width: 991px) {
+
+    .gallery-item {
+        min-height: 50px;
+    }
+
     .hide-mobile {
         display: none;
     }
