@@ -257,7 +257,7 @@ header .navigation li a {
     /* Positioning for the loader */
     overflow: hidden;
     padding: 10px;
-    min-height: 50px;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
